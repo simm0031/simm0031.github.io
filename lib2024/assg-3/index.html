@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>Assignment 3
+    </title>
+    <!-- An Internet Applications assignment by Glenn Simmens -->
+
+    <meta charset="utf-8">
+    <meta name="description" content="This is a HTML document">
+    <meta name="keywords" content="HTML, HTML5, Tags, Advanced HTML, Special tags">
+    <meta name="robots" content="noindex, nofollow">
+
+    <style> table, th, td { border: 1px solid; } 
+    </style>
+  </head>
+
+  <body>
+    <header id=header>
+      <h1>Assignment 3
+      </h1>
+    </header>
+
+    <form action="totallyreal.php" method="get">
+      <fieldset>
+
+        <legend>Submission Information</legend>
+
+          <!-- I grouped the fields into divs that kept similar info together, as that made more sense to me than separating literally everything. -->
+
+          <!-- We begin with First Name and Last Name. -->
+
+        <div id="names" class="form-elm">
+          <label for="first_name">First name</label>
+          <input id="first_name" type="text" placeholder="--enter name--" required>
+
+          <label for="last_name">Last name</label>
+          <input id="last_name" type="text" placeholder="--enter surname--" required>
+        </div><br>
+
+          <!-- Next are E-Mail and Password. -->
+
+        <div id="email-password" class="form-elm">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="realmail@fakemail.com" required>
+
+          <label for="pass">Password</label>
+          <input type="password" name="pass" id="pass" placeholder="P@ssw0rd" required>
+        </div><br>
+
+          <!-- Introductory Text seemed to need it's own div. -->
+
+        <div id="introductory-text" class="form-elm">
+          <label for="intro-text">Introductory Text</label>
+          <textarea name="intro-text" id="intro-text" cols="10" rows="5" placeholder="Your text here"></textarea>
+        </div><br>
+
+          <!-- Phone Number also seemed best kept on it's own. -->
+          <!-- Also, used tel tag instead of num as it seems to be meant for telephone numbers specifically..? -->
+
+        <div id="phonenumber" class="form-elm">
+          <label for="phone">Mobile Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="###-###-####" required>
+        </div><br>
+
+          <!-- Gender got it's own div as well. -->
+
+        <div id="gender" class="form-elm">
+          <label for="gender1">Female</label>
+          <input id="gender1" type="radio" name="group1">
+          <label for="gender2">Male</label>
+          <input id="gender2" type="radio" name="group1">
+          <label for="gender3">Non-Binary</label>
+          <input id="gender3" type="radio" name="group1">
+          <label for="gender4">Other</label>
+          <input id="gender4" type="radio" name="group1">
+        </div><br>
+
+          <!-- And Date of Birth too. -->
+
+        <div id="dob" class="form-elm">
+          <label for="bday">Date of Birth</label>
+          <input id="bday" type="date" value="2022-01-01">
+        </div><br>
+
+          <!-- The Address div is pretty full, but it made sense to me to keep them grouped together. I kept the different fields separated in the code, to better differentiate them. -->
+
+        <div id="address" class="form-elm">
+          <label for="street_address">Street Address</label>
+          <input id="street_address" type="text" placeholder="123 Main Street"><br>
+
+          <label for="city_address">City</label>
+          <input id="city_address" type="text" placeholder="Townsville"><br>
+
+          <label for="province_address">Province</label>
+          <select name="province_address" id="province_address">
+            <option value="default" selected>--Select--</option>
+            <option value="ab">Alberta</option>
+            <option value="bc">British Columbia</option>
+            <option value="mb">Manitoba</option>
+            <option value="nb">New Brunswick</option>
+            <option value="nl">Newfoundland and Labrador</option>
+            <option value="nt">Northwest Territories</option>
+            <option value="ns">Nova Scotia</option>
+            <option value="nu">Nunavut</option>
+            <option value="on">Ontario</option>
+            <option value="pe">Prince Edward Island</option>
+            <option value="qc">Quebec</option>
+            <option value="sk">Saskatchewan</option>
+            <option value="yt">Yukon</option>
+          </select><br>
+
+          <label for="country_address">Country</label>
+          <select name="country_address" id="country_address">
+            <option value="default" selected>--Select--</option>
+            <option value="country1">Canada</option>
+            <option value="country2">United States of America</option>
+            <option value="country3">Ireland</option>
+            <option value="country4">Holy See</option>
+          </select><br>
+
+          <label for="postal_code">Postal Code</label>
+          <input id="postal_code" type="text" placeholder="A1B 2C3">
+        </div><br>
+
+          <!-- Hobbies is the last set of fields the user is asked to look at. -->
+
+        <div id="hobbies_interests" class="form-elm">
+          <p>Hobbies/Interests<br>
+            <label for="sports">Sports</label>
+            <input type="checkbox" name="hobbies" id="sports" value="sports"> <br>
+            <label for="art">Art</label>
+            <input type="checkbox" name="hobbies" id="art" value="art"> <br>
+            <label for="science">Science</label>
+            <input type="checkbox" name="hobbies" id="science" value="science"> <br>
+            <label for="travel">Travel</label>
+            <input type="checkbox" name="hobbies" id="travel" value="travel"> <br>
+            <label for="memes">Memes</label>
+            <input type="checkbox" name="hobbies" id="memes" value="memes"> <br>
+          </p>
+        </div>
+      </fieldset>
+
+        <!-- Lastly, the Submit and Reset buttons. -->
+
+      <div>
+        <input type="submit" value="SUBMIT">
+        <br><br><br> <!-- Extra space between, to help prevent misclicks. -->
+        <input type="reset" value="RESET">
+      </div>
+
+    </form>
+  </body>
+</html>
