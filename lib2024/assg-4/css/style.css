@@ -1,0 +1,136 @@
+@charset utf-8
+
+/*http: //meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	Liscense:  none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin:  0;
+	padding:  0;
+	border:  0;
+	font-size:  100%;
+	font:  inherit;
+	vertical-align:  baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display:  block;
+}
+body {
+	line-height:  1;
+}
+ol, ul {
+	list-style:  none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content:  none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+img{
+	width: 100%;
+}
+.logo{
+	width: 100px;
+	height: 100px;
+	position: left;
+}
+#head-space{
+	display: block;
+}
+
+.heading {
+	float: left;
+}
+html{
+	background: #7CC576;
+} 
+.container{
+	background: url(../img/circles-light.png) ;
+	padding: 10px;
+	clear: left;
+}
+.header{
+	width: 100%;
+	float: left;
+}
+
+.photo-gally{
+	width: 33%;
+	float:  left;
+}
+
+.link-gally{
+	float: right;
+}
+
+}
+#nav-list ul {
+	clear: left;
+}
+#nav-start {
+	clear:  left;
+}
+.nav1 {
+	background-color: #6DCFF6;
+	padding: 5px 5px 20px 5px;
+	margin: 10px 20px 20px 20px;
+	float: left;
+}
+
+.side-cat {
+	width: 33%;
+	height: 33%;
+}
+
+
+.site-sidebar {
+	float: right;
+}
+
+a:before, a:after {
+	/*content:"" is required to enable a pseudo element*/
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-size: 100%;
+	margin: 0 10px;
+}
+
+a[href="http://twitter.com/"]:before {
+	background-image: url("../img/twitter.png");
+}
+a[href="http://youtube.ca/"]:before {
+	background-image: url("../img/youtube.png");
+}
+a[href="http://facebook.com/"]:before {
+	background-image: url("../img/facebook.png");
+}
