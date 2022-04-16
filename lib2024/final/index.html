@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <title>FINAL
+    </title>
+            <!-- An Internet Applications assignment by Glenn Simmens -->
+
+    <meta charset="utf-8">
+    <meta name="description" content="This is a HTML document">
+    <meta name="keywords" content="HTML, HTML5, Tags, Advanced HTML, Special tags">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  </head>
+
+  <body>
+    <header id="header">
+      <div id= "head-space">
+        <h1>MY LOGO</h1>
+      </div>
+
+      <nav id="nav-list" class="navigation">
+        <ul>
+          <li>
+            <a href="https://zombo.com" id="nav-start" class="nav1"><strong>HOME</strong></a>
+          </li>
+          <li>
+            <a href="https://zombo.com" class="nav1"><strong>ABOUT</strong></a>
+          </li>
+          <li>
+            <a href="https://zombo.com" class="nav1"><strong>SCHEDULE</strong></a>
+          </li>
+          <li>
+            <a href="https://zombo.com" class="nav1"><strong>PORTFOLIO</strong></a>
+          </li>
+          <li>
+            <a href="https://zombo.com" class="nav1"><strong>CONTACT</strong></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+          <!-- MAIN BODY -->
+
+    <div id="main-body" class="container row">
+
+          <!-- ABOUT SECTION -->
+
+      <section id="about-text" class="column left">
+        <h2>ABOUT</h2>
+        <p>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. H'shogg hrii cs'uhn, Chaugnar Faugn 'gha shaggnyth goka stell'bsna Tsathoggua. Naflfhtagn mg gof'nn syha'h lloig ph'athg, y-hai naflphlegeth sll'ha ch' shaggor f'k'yarnak Nyarlathotep, 'fhalma k'yarnak hlirghnyth cR'lyeh llll mg li'hee.  Li'hee czhro vulgtm ep ph'uaaah nw hai Azathoth f'vulgtlagln Dagon gotha chtenff fhtagn ooboshu, chafh'drn Azathoth s'uhn r'luh stell'bsna h'Nyarlathotep chai c'bthnk nglui li'hee fhtagn f'k'yarnak.</p>
+        <br>
+        <p>Gnaiihoth Nyarlathotep geb hlirgh uaaahagl fm'latgh Hastur nog ph'n'gha ron lloig tharanak Nyarlathotepnyth lw'nafh n'gha nog Dagon 'bthnk vulgtlagln goka Tsathoggua sll'ha. Hastur 'bthnk Cthulhu vulgtm s'uhn li'hee chafh'drn h'syha'h Chaugnar Faugn gotha nog sgn'wahl gotha Nyarlathotep naflftaghu, ngfhtagn vulgtm Nyarlathotep nw ngchtenff ch' Hastur R'lyeh nguaaah uln cch' mg. </p>
+      </section>
+
+      <div id="about-pic" class="column right">
+        <figure>
+          <img src="img/deep1.jpg" class="body-image" alt="Clear your mind">
+        </figure>
+      </div>
+
+          <!-- SCHEDULE SECTION -->
+
+      <section id="schedule-area" class="schedule">
+        <h2> SCHEDULE </h2>
+        <table class="center">
+          <tr>
+            <th>TIME</th>
+            <th>MONDAY</th>
+            <th>TUESDAY</th>
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+            <th>FRIDAY</th>
+          </tr>
+          <tr>
+            <td>09:00 - 11:00</td>
+            <td>Communications I</td>
+            <td>Client Services</td>
+            <td>Special Collections</td>
+            <td>Directed Research Seminar</td>
+            <td>Client Services</td>
+          </tr>
+          <tr>
+            <td>11:00 - 12:30</td>
+            <td>Reference</td>
+            <td>Internet App</td>
+            <td>Library Software</td>
+            <td>French</td>
+            <td>Reference</td>
+          </tr>
+          <tr>
+            <td>14:00 - 15:00</td>
+            <td>Acquisitions</td>
+            <td>General Elective</td>
+            <td>Marketing</td>
+            <td>Emerging Library Tech</td>
+            <td>Library Software</td>
+          </tr>
+          <tr>
+            <td>15:30 - 17:30</td>
+            <td>French</td>
+            <td>French</td>
+            <td>Acquisitions</td>
+            <td>Subject Analysis</td>
+            <td>Internet App</td>
+          </tr>
+        </table>
+      </section>
+
+          <!-- PROFILE SECTION -->
+      <section id="profile-edit" class="p-column p-left">
+        <h2>EDIT PROFILE</h2>
+
+          <!-- PROFILE EDIT SECTION -->
+        <div class="pe-container">
+          <form action="action_page.php">
+            <div class="pe-row">
+              <div class="col-25">
+                <label for="name">Name:</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="name" name="fullname" placeholder="Full name here..." required>
+              </div>
+            </div>
+            <div class="pe-row">
+              <div class="col-25">
+                <label for="email">Email:</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="email" name="e-mail" placeholder="Email here..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required >
+              </div>
+            </div>
+            <div class="pe-row">
+              <div class="col-25">
+                <label for="addy">Address</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="addy" name="address" placeholder="Street address here..." required>
+              </div>
+            </div>
+            <div class="pe-row">
+              <div class="col-25">
+                <label for="homecity">City</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="homecity" name="city" placeholder="City name here..." required>
+              </div>
+            </div>
+            <div class="pe-row">
+              <div class="col-25">
+                <label for="province">Province</label>
+              </div>
+              <div class="col-75">
+                <select id="province" name="prov-add" required>
+                  <option value="" selected>--Province Select--</option>
+                  <option value="AB">Alberta</option>
+                  <option value="BC">British Columbia</option>
+                  <option value="MB">Manitoba</option>
+                  <option value="NB">New Brunswick</option>
+                  <option value="NL">Newfoundland and Labrador</option>
+                  <option value="NT">Northwest Territories</option>
+                  <option value="NS">Nova Scotia</option>
+                  <option value="NU">Nunavut</option>
+                  <option value="ON">Ontario</option>
+                  <option value="PE">Prince Edward Island</option>
+                  <option value="QC">Quebec</option>
+                  <option value="SK">Saskatchewan</option>
+                  <option value="YT">Yukon</option>
+                </select>
+              </div>
+            </div>
+            <div class="pe-row">
+              <div class="col-25">
+                <label for="postal">Postal Code</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="postal" name="postalcode" placeholder="Postal code here! H0H 0H0!" pattern="[a-z]+[0-9]+[a-z]+[0-9]+[a-z]+[0-9]" required>
+              </div>
+            </div>
+            <br>
+            <div class="pe-row" id="sub-button">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </section>
+        <!-- PROFILE INFO SECTION -->
+      <section id="profile-info" class="p-column p-right">
+        <h2>PROFILE INFO</h2>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="card">
+          <i class="fa-solid fa-circle-user fa-8x" id="profile-pic"></i>
+          <h3>John Doe</h3>
+          <p>JohnDoe@algonquincollege.com</p>
+          <p>1385 Woodroffe Ave, Nepean,</p>
+          <p>ON, K2G 1V8</p>
+          <p><button><i class="fa-solid fa-envelope fa-2x"></i></button></p>
+        </div>
+      </section>
+
+    </div>
+
+      <!-- FOOTER SECTION -->
+    <footer id="footer-area" class ="f-row">
+
+      <!-- LINKS SECTION -->
+      <section id="foot-links" class="f-column">
+        <h4>QUICK LINKS</h4>
+        <a href="https://zombo.com" class="qlink">SCHEDULE</a> <br> <br>
+        <a href="https://zombo.com" class="qlink">ABOUT</a> <br> <br>
+        <a href="https://zombo.com" class="qlink">PORTFOLIO</a> <br> <br>
+        <a href="https://zombo.com" class="qlink">CONTACT</a>
+      </section>
+
+      <!-- SOCIALS SECTION -->
+      <section id="foot-socials" class="f-column">
+        <h4>FOLLOW US</h4>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+        <a href="https://www.youtube.ca" class="fa fa-youtube"></a>
+        <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+      </section>
+
+      <!-- ADDRESS -->
+      <section id="foot-address" class="f-column">
+        <h4>ADDRESS</h4>
+        <p>1385 Woodroffe Ave,</p>
+        <p>Nepean, ON K2G 1V8</p>
+        <p>Canada</p>
+      </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/e05e2f971a.js" crossorigin="anonymous"></script>
+  </body>
+  </html>

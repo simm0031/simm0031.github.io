@@ -1,0 +1,371 @@
+@charset utf-8;
+
+/*http: //meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	Liscense:  none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin:  0;
+	padding:  0;
+	border:  0;
+	font-size:  100%;
+	font:  inherit;
+	vertical-align:  baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display:  block;
+}
+
+body {
+	line-height:  1;
+	font-family: "Helvetica", sans-serif;
+	max-width: 1024px;
+}
+ol, ul {
+	list-style:  none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content:  none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+	width: 100%;
+}
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---------------------Header CSS-------------------- */
+
+.header{
+	width: 100%;
+	float: left;
+	max-width: 1024px;
+}
+
+#nav-list ul {
+	clear: left;
+}
+#nav-start {
+	clear:  left;
+}
+
+@font-face {
+	font-family: abelregular;
+	src: url("fonts/abel_regular_macroman/stylesheet.css");
+}
+
+.nav1 {
+	font-family: "abelregular";
+	background-color: #72A9AE;
+	padding: 10px 50px 10px 0px;
+	float: left;
+	text-decoration: none;
+	color: black;
+}
+#nav-list {
+	background: #72A9AE ;
+	padding: 0px 10px 42px 10px;
+	clear: left;
+}
+
+h1 {
+  color: #72a9ae;
+  font-family: "Open Sans" , sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  padding:  15px 10px 20px 10px;
+}
+
+
+/*--------------------MAIN BODY CSS--------------------*/
+
+.container{
+	background: url(../img/dynamic-style.png) ;
+	padding: 10px;
+	clear: left;
+}
+
+h2 {
+  color: #72a9ae;
+}
+/*--------------------ABOUT AREA CSS--------------------*/
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.body-image {
+	margin-top: 25px;
+}
+
+/*--------------------SCHEDULE AREA CSS--------------------*/
+
+#schedule-area {
+	padding: 0px 10px 0px 10px;
+	clear:  both;
+}
+
+
+table, tr, th, td { 
+	border: 1px solid black; 
+} 
+
+th { 
+text-align: center;
+background-color: #FFFFFF;
+color:  #72a9ae;
+padding:  10px 5px 10px 5px;
+}
+
+td {
+text-align: center; 
+padding:  10px 5px 10px 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #EFEFEF;
+}
+
+/*--------------------PROFILE AREA CSS--------------------*/
+
+.p-column {
+  float: left;
+  padding: 10px;
+}
+
+.p-left {
+  width: 50%;
+}
+
+.p-right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*--------------------EDIT PROFILE AREA--------------------*/
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+@keyframes glowup {
+  0% {background-color: #FFFFFF;}
+  50% {background-color: #72a9ae;}
+  100% {background-color: #FFFFFF;}
+}
+
+input[type=submit] {
+  background-color: #FFFFFF;
+  padding: 12px 20px;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  animation-name: glowup;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* Style the container */
+.pe-container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.pe-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+/*--------------------PROFILE INFO AREA CSS--------------------*/
+
+.card {
+	background-color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+#profile-pic {
+	margin-top:  10px;
+	border-radius: 50%;
+	border: 6px solid #72a9ae;
+}
+
+h3 {
+  color: #72a9ae;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #72a9ae;
+  background-color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/*--------------------FOOTER AREA CSS--------------------*/
+footer {
+	padding:  10px 20px 15px 20px;
+	max-width: 1024px;
+	background-color: #454545;
+	color: #FFFFFF;
+}
+#footer-area {
+	clear:  left;
+	padding:  10px 20px 15px 20px;
+	max-width: 1024px;
+	background-color: #454545;
+	color: #FFFFFF;
+}
+
+.f-column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.f-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.qlink {
+	color:  #FFFFFF;
+	font-size: 15px;
+	padding:  0px 0px 0px 10px;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* YouTube */
+.fa-youtube {
+  background: #FF0000;
+  color: white;
+}
